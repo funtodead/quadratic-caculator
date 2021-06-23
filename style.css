@@ -1,8 +1,13 @@
 h1 {
-    text-align: center;
-    color: black;
-    display-inside: ruby;
-    margin: 30px 0 50px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    height: 5vh;
+    background-image: url("https://media.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif");
+    background-position: center;
+    -webkit-background-clip:text;
 }
 
 .square {
@@ -26,16 +31,27 @@ h1 {
     display: flex;
     margin: 2vmax;
 
-    background-color: lightskyblue;
-    width: 0.5vmax;
+    background-color: dodgerblue;
+    width: 1.3vmax;
     padding: 0.25vmax;
 
-    font-family: "Arial Rounded MT Bold", serif;
+    font-family: cursive;
 }
 
 ins {
     text-decoration: underline;
 }
 .element input {
-    width: 0.5vmax;
+    width: 2.1vmax;
+}
+.credit{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    height: 20vh;
+    background-image: url("https://media.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif");
+    background-position: center;
+    -webkit-background-clip:text;
 }
