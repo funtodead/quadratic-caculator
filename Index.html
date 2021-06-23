@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quadratic formula solver - by toshi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <h1>Quadratic formula solver</h1>
+</head>
+<body>
+<div>
+
+</div>
+<div class="square">
+    <div class="elements">
+        <span class="element">
+            a=
+                <input id="a" type="text"  name="a"><br>
+            </span>
+        <span class="element">
+                    b=
+                    <input id="b" type="text"  name="b"><br>
+                </span>
+        <span class="element">
+                    c=
+                    <input id="c" type="text"  name="c"><br>
+                </span>
+    </div>
+    <input type="button" onclick="solve()" value="Solve">
+
+    <p id="output"></p>
+</div>
+<script>
+    function solve() {
+        const a = parseFloat(document.getElementById("a").value);
+        const b = parseFloat(document.getElementById("b").value);
+        const c = parseFloat(document.getElementById("c").value);
+        let x1 = 0; //first x for quadratic
+        let x2 = 0; // seconds first x for quadratic
+        const delta = Math.sqrt((b * b) - (4 * a * c));
+        console.log(a)
+        console.log(b)
+        console.log(c)
+        console.log(delta);
+        const doc = document.getElementById("output");
+
+        if (delta > 0) {
+            x1 = (-b + delta) / (2 * a);
+            x2 = (-b - delta) / (2 * a);
+            x1 = x1.toFixed(3);
+            x2 = x2.toFixed(3);
+            var result = `${a}x² + ${b}x + ${c}`
+             var result2 = result.bold();
+            doc.innerText = `Solution for the equation ${result2}\nx1: ${x1}\nx2: ${x2}`;
+        } else if (delta === 0) {
+            x1 = (-b / (2 * a));
+            x1 = x1.toFixed(3);
+            doc.innerText = `x: ${x1}`;
+        } else {
+            doc.innerText = `No solutions.`;
+        }
+
+    }
+</script>
+</body>
+</html>

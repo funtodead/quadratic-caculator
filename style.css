@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    color: black;
+    display-inside: ruby;
+    margin: 30px 0 50px;
+}
+
+.square {
+    margin: auto;
+    background-color: white;
+    padding: 2vmax;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.25vmax;
+    width: 50%;
+    height: 25vmax;
+}
+
+.elements {
+    margin: auto;
+    display: flex;
+    padding: 0.25vmax;
+}
+
+.element {
+    display: flex;
+    margin: 2vmax;
+
+    background-color: lightskyblue;
+    width: 0.5vmax;
+    padding: 0.25vmax;
+
+    font-family: "Arial Rounded MT Bold", serif;
+}
+
+ins {
+    text-decoration: underline;
+}
+.element input {
+    width: 0.5vmax;
+}
